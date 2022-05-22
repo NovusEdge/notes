@@ -62,3 +62,9 @@ Finally, in 1994, British mathematician Andrew Wiles gave a proof, after seven y
 
 This is a simply stated proposition whose truth remains unknown.
 The conjecture states: _Every even integer greater than 2 is the sum of two primes._
+
+This conjecture is more popularly known as **Goldbach's Conjecture**, and this dates back to 1742. It is known to hold for all numbers up to $10^{18}$, but to this day, nobody knows if this holds for all positive numbers or not.
+
+
+### Predicates
+
