@@ -1,5 +1,7 @@
 {
   "legacyEditor": false,
   "livePreview": true,
-  "showLineNumber": true
+  "showLineNumber": true,
+  "fileSortOrder": "byModifiedTimeReverse",
+  "alwaysUpdateLinks": true
 }
