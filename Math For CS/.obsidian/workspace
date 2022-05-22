@@ -1,0 +1,119 @@
+{
+  "main": {
+    "id": "3f493e32a96b8806",
+    "type": "split",
+    "children": [
+      {
+        "id": "5fa12781a35e6274",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Chapter 1.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c310bb8d4599385b",
+    "type": "split",
+    "children": [
+      {
+        "id": "9e0f149d8e4d0f5c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "12d42125cabf04f0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "05a7a49a8a27be5d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7b567cb8ae34ce4a",
+    "type": "split",
+    "children": [
+      {
+        "id": "949b73fb7d2a1ddb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "027777c497b7ed2e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Chapter 1.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a2d1eceee21ebe28",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Chapter 1.md"
+              }
+            }
+          },
+          {
+            "id": "b8931e08113654fc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Chapter 1.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "5fa12781a35e6274",
+  "lastOpenFiles": [
+    "Chapter 1.md",
+    "Introduction.md",
+    "Mathematics For Computer Science/Introduction.md",
+    "Mathematics For Computer Science/MFCS-book.pdf.pdf"
+  ]
+}
