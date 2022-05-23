@@ -1,6 +1,6 @@
 # What is a Proof?
 
-***Definition***: A _mathematical proof_ of a _[[#Propositions|proposition]]_ is a chain of _logical deductions_ leading to the proposition from a base set of _[[#Axioms|axioms]]_. ([[Bibliography#^9c2cde|reference]])
+***Definition***: A _mathematical proof_ of a _[[#Propositions|proposition]]_ is a chain of _[[#Logical Deductions|logical deductions]]_ leading to the proposition from a base set of _[[#Axioms|axioms]]_. ([[Bibliography#^9c2cde|reference]])
 
 
 ### Propositions
@@ -93,3 +93,22 @@ There are a few key terms that need to be established before proceeding:
 There's also some very important information regarding this:
 
 > Euclid’s axiom-and-proof approach, now called the axiomatic method, remains the foundation for mathematics today. In fact, just a handful of axioms, called the Zermelo-Fraenkel with Choice axioms (ZFC), together with a few logical deduction rules, appear to be sufficient to derive essentially all of mathematics.
+
+The ZFC axioms are important in studying and justifying the foundations of mathematics, but for practical purposes, they are much too primitive. By one reckoning, a formal proof in ZFC that 2 + 2 = 4 requires more than 20,000 steps!
+
+It's better to assume a huge set of axioms. A good general guideline is simply to be up front about what you’re assuming.
+
+##### Logical Deductions
+
+Logical Deductions, or _inference rules_, are used to prove new propositions using previously proved ones. 
+
+A fundamental inference rule is _modus ponens_. This rule says that a proof of $P$ together with a proof that $P\ implies\ Q$ is a proof of $Q$.
+
+Inference rules are sometimes written in a funny notation. For example _modus ponens_ is written:
+
+![modus ponens example](assets/modus-ponens-written.png)
+
+When the statements above the line, called the _antecedents_, are proved, then we can consider the statement below the line, called the _conclusion_ or _consequent_, to also be proved.
+
+
+

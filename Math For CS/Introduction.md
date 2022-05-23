@@ -10,6 +10,6 @@ There's a very important footnote in this section stating:
 
 Mathematics has it's own notion of "proof":
 
-***Definition***: A _[[Proofs#What is a Proof|mathematical proof]]_ of a _[[Proofs#Prepositions|proposition]]_ is a chain of _logical deductions_ leading to the proposition from a base set of _[[Proofs#The Axiomatic Method|axioms]]_. ([[Bibliography#^9c2cde|reference]])
+***Definition***: A _[[Proofs#What is a Proof|mathematical proof]]_ of a _[[Proofs#Prepositions|proposition]]_ is a chain of _[[Proofs#Logical Deductions|logical deductions]]_ leading to the proposition from a base set of _[[Proofs#The Axiomatic Method|axioms]]_. ([[Bibliography#^9c2cde|reference]])
 
 Books used can be found in [[Bibliography]].
