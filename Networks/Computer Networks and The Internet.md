@@ -34,6 +34,13 @@ End systems, packet switches, and other pieces of the Internet run **protocols**
 
 ==The **IP** protocol specifies the format of the packets that are sent and received among routers and end systems.== _The Internet's principle protocols are collectively known as **TCP/IP**_
 
-TODO: Add stuff for standards from the last para with references....
+**Internet standards** are developed by the [Internet Engineering Task Force (IETF)](https://www.ietf.org/). The IETF standards are documents called **[requests for comments(RFCs)](https://www.ietf.org/standards/rfcs/)**. RFCs tend to be quite technical and detailed, and define protocols like TCP, IP, HTTP, SMTP etc. _Other bodies also define standards for network components, most notably for network links. The IEEE 802 LAN/MAN Standards Committee [IEEE 802 2012](https://en.wikipedia.org/wiki/IEEE_802), for example, specifies the Ethernet and wireless WiFi standards._ 
 
 ## A Services Description
+This approach describes the Internet as _an infrastructure that provides services to applications._ These applications include e-mail, web surfing, social networks, instant messaging, Voice-over-IP(VoIP), video streaming, peer-to-peer (P2P) file sharing, remote login, and much more. These applications are said to be **distributed applications**, since they involve multiple end systems that exchange data with each other. ==Importantly, Internet applications run on end systems, they do not run on the packet switches in the network core.== Although packet switches facilitate the exchange of data among end systems, they are not concerned with the application that is the source or sink of data. 
+
+Now, we get to an important question: _==How does one program running on one end-system instruct the Internet to deliver data to another program running on another end system?==_
+
+End systems attached to the internet provide an **Application Programming Interface (API)** that specifies how a program running on one end-system asks the Internet infrastructure to deliver data to a specific destination program running on another end-system.
+
+
