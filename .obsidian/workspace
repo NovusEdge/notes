@@ -1,0 +1,71 @@
+{
+  "main": {
+    "id": "65e6deb0371c8a1c",
+    "type": "split",
+    "children": [
+      {
+        "id": "1074717101f7dab6",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Proofs.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7546e01c48aef3ed",
+    "type": "split",
+    "children": [
+      {
+        "id": "8e1428f9bf2e2e1f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c3e36717a78ad003",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "9cb719d6f257f55f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "189b8d242671763c",
+    "type": "split",
+    "children": [],
+    "direction": "horizontal",
+    "width": 242,
+    "collapsed": true
+  },
+  "active": "1074717101f7dab6",
+  "lastOpenFiles": [
+    "Proofs.md",
+    "Introduction.md"
+  ]
+}
