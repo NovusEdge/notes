@@ -70,4 +70,16 @@ Here, the ` gcc ` compiler driver reads the source file ` hello.c ` and translat
 	-  If you look carefully, the program makes use of the ` printf ` function, which is a part of the _standard C library_ provided by every C compiler. 
 	- The ` printf ` function resides in a separate precompiled object file called `printf.o`, which somehow be merged with our ` hello ` file, which is an _executable object file_ (a more usual term is: _an executable_) that is ready to be loaded into memory and executed by the system.
 
-There are several advantages if you understand the compilation system and how it works. You'll need this knowledge to _optimize_ 
+There are several advantages if you understand the compilation system and how it works. You'll need this knowledge to _optimize program performance_, _understand link-time errors_, _avoid security loopholes_, and much more.
+
+### Processors Read and Interpret Instructions Stored in Memory
+Thus far, we have compiled our program: ` hello.c ` into an executable, and now comes the part where we run the program. To do this on a UNIX system:
+
+```console
+unix> ./hello
+hello, world
+unix>
+```
+
+What we're using here is something called a _shell_. ==The shell is a command-line interpreter that prints a prompt, waits for you to type a command line, and then performs the command==. Here, the shell simply loads the `hello` executable and waits for it to finish it's process. Once the executable process terminates, the shell prints the prompt and waits for the user to enter the next command.
+  
