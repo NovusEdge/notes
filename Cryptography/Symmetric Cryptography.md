@@ -31,7 +31,7 @@ _Substitution cipher_ (also known as _replacement cipher_) is one of the simples
 
 The _substitution table_ is the _key_ for substitution cipher. It maps each character to be encoded to another character from the same set so as to have the said character be replaced when the encryption takes place.
 
-For an example, for the english lexicon, we can make a substitution table by randomly choosing a letter for another (without repetition). 
+For an example, for the English language, we can make a substitution table by randomly choosing a letter for another (without repetition). 
 
 ![Figure showing simple substitution cipher](sub-cipher-abba-eg.png)
 
@@ -51,11 +51,25 @@ If the equality holds, a possible correct key is found; if not, proceed with the
 
 In practice, a brute-force attack can be more complicated because incorrect keys can give false positive results. It is important to note that a brute-force attack against symmetric ciphers is always possible in principle. Whether it is feasible in practice depends on the key space, i.e., on the number of possible keys that exist for a given cipher. If testing all the keys on many modern computers takes too much time, i.e., several decades, the cipher is computationally secure against a brute-force attack.
 
-***NOTE***: This explaination/cipher technique basically assumes that there exists no single elementin the key-space which is the same on both ends i.e the key and what it represents cannot be the same. 
+***NOTE***: This explanation/cipher technique basically assumes that there exists no single element in the key-space which is the same on both ends i.e. the key and what it represents cannot be the same. 
 
-***Remark***: Since we're just talking about text in english language for this topic we can also lock the length of the key-space to a fixed constant. By this simple observation we can say that the strength the replacement cipher depends on the language it is implemented in.
+***Remark***: Since we're just talking about text in English language for this topic we can also lock the length of the key-space to a fixed constant. By this simple observation we can say that the strength the replacement cipher depends on the language it is implemented in.
 
-The key-space of substitution cipher for english alphabet is $\approx 2^{88}$ (i.e. $26!$). Even with hundreds of thousands of high-end PCs such a search would take several decades. We're thus tempted to conclude that this kind of cipher is secure. However, this is incorrect because there exists a more powerful attack.
+The key-space of substitution cipher for English alphabet is $\approx 2^{88}$ (i.e. $26!$). Even with hundreds of thousands of high-end PCs such a search would take several decades. We're thus tempted to conclude that this kind of cipher is secure. However, this is incorrect because there exists a more powerful attack.
 
 ## Second Attack: Letter Frequency Analysis
+
+The major weakness of the cipher is that each plaintext character/symbol always maps to the same ciphertext symbol. ==This means that the statistical properties of the plaintext are preserved in the ciphertext==. If we consider an example, and determine the frequencies of each of the letters in the ciphertext, we can be confident that the most frequent letters correspond to the most frequent letters in the plaintext as well as the most frequent letters used in the English language.  
+
+For practical attacks, here are some properties of language that can be exploited:
+
+1. Determine the frequency of every ciphertext character letter. The frequency distribution will be close to that of the given language in general. For example, in the English language, the letter ` E ` is the most frequent letter ($\approx$ 13%), this property will be preserved in the ciphertext. So we can be sure that whatever letter represents ` E ` in the ciphertext will also have a frequency of $\approx$ 13%.
+2. The method above can be generalized by looking at pairs of triples, or larger groups of ciphertext symbols. For instance, in English, the letter ` Q ` is almost always followed by ` U `. This behavior can be used to detect the substitution of the letters ` Q ` and ` U `.
+3. If we assume whitespaces (blanks and newlines) have been found (which is not common), one can often detect frequent short words like `the`, `and`, etc. Once we have identified these words, we instantly know the plaintext to ciphertext mapping of the letters in these words.
+
+ Here's a table showing the letter frequencies of the letters in English Language:
+
+![English Letter Frequencies](assets/english-letter-freqs.png)
+
+The takeaway from this section is that ==Good ciphers are the ones that hide statistical properties of the encrypted plaintext. The ciphertext symbols should appear to be random==. Furthermore, ==A large key-space alone is not sufficient for a strong encryption==. 
 
