@@ -32,4 +32,16 @@ Physically, the memory consists of _[[Bibliography#^16762b|dynamic random access
 
 #### Processor
 
-The _central processing unit_ (CPU), or simply _processor_ 
+The _central processing unit_ (CPU), or simply _processor_ , is the engine that interprets (or executes) instructions stored in the main memory. ==At it's core is a word-sized register (storage device) called the [[Bibliography#^50b001|program counter (PC)]]==. At any point in time, the PC points at (contains the address of) some machine-language instruction in main-memory. The PC is commonly called: _instruction pointer (IP)_ in Intel x86 and ltanium microprocessors, and sometimes called the _instruction address register (IAR)_. You can read up more about it later in the notes, or on the [[Bibliography#^50b001|wikipedia reference in the bibliography]]. 
+
+A processor _appears_ to operate according to a very simple instruction execution model, defined by its _[[Bibliography#^f9d5ed|instruction set architecture]]_. In this model, instructions execute in strict sequence, and executing a single instruction involves performing a series of steps. The processor reads the instruction from memory pointed at by the PC, interprets the bits of the instruction, performs some simple instruction, which may or may not me contiguous in memory to the instruction that was just executed. Here's a reference to [[Bibliography#^e45081|intel's instruction set architecture]].
+
+There are only a few of these simple operations, and they revolve around main memory, the _register file_, and the _arithmetic/logic unit_ (ALU). The register file is a small storage device that consists of a collection of word-sized registers, each with it's own unique name. The ALU computes new data and address values.  Here are some examples of the simple operations a CPU might carry out:
+
+- ***Load***: Copy a byte or a word from main memory into a register, _overwriting the pervious contents of the register_. 
+- ***Store***: Copy a byte or a word from a register to a location in main memory, _overwriting the previous contents of that location_.
+- ***Operate***: Copy the contents of two registers to the ALU, perform an arithmetic operation on the two words, and store the result in a register, _overwriting the pervious contents of that register_.
+- ***Jump***: Extract a word from the instruction itself and copy that word into the PC, _overwriting the previous value of PC_.
+
+One can distinguish the processor’s instruction set architecture, describing the effect of each machine-code instruction, from its microarchitecture, describing how the processor is actually implemented.
+

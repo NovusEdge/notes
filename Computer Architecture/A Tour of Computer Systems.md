@@ -82,4 +82,20 @@ unix>
 ```
 
 What we're using here is something called a _shell_. ==The shell is a command-line interpreter that prints a prompt, waits for you to type a command line, and then performs the command==. Here, the shell simply loads the `hello` executable and waits for it to finish it's process. Once the executable process terminates, the shell prints the prompt and waits for the user to enter the next command.
-  
+
+It's recommended that you check the next topic's file [[Hardware Organization of a System]] and then return to this page.
+
+#### Returning the ` hello ` program
+
+Initially, the shell program is executing its instructions, waiting for us to type a command. As we type the characters `./hello` at the keyboard, the shell program reads each one into a register, and then stores it in memory:
+
+![Reading the Hello command from Keyboard](assets/reading-hello-command.png)
+
+When `enter` key is pressed, the command is passed onto the shell to execute and it loads the `hello` executable. It does so by executing a set of instructions that _copies the data in hello object file from disk to main memory_. Using a technique known as _[[Bibliography#^379d84|direct memory access (DMA)]]_, the data travels directly from disk to the main memory, _without passing through the processor_:
+
+![Loading the Hello Executable](assets/loading-hello-executable.png)
+
+Once this is done, the processor begins executing the machine-language instructions in the `hello` program's `main` routine:
+
+![Execution of the hello file](assets/execution-of-hello.png)
+
