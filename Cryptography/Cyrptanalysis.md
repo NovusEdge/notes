@@ -11,3 +11,5 @@ This branch is understood as the _science of recovering the plaintext ` x ` from
 This is further divided into mathematical analysis and brute force attacks.
 
 #### Implementation Attacks
+Side Channel analysis can be used to obtain a secret key, for instance, by measuring the electrical power consumption of a processor which operates on the secret key. This power trace can then be used to recover the secret key by applying signal processing techniques. In addition to power consumption, electromagnetic radiation or the runtime behavior of algorithms can give information about the secret key and are, thus useful side-channels.
+

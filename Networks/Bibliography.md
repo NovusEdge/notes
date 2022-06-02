@@ -5,7 +5,10 @@
 
 
 # Web References
-1. 
+1. [Network Packet](https://en.wikipedia.org/wiki/Network_packet) ^46bd9a
+2. [DSL network access, Wikipedia](https://en.wikipedia.org/wiki/Digital_subscriber_line) ^61ea71
+3. [Cable Internet Access](https://en.wikipedia.org/wiki/Cable_Internet_access) ^8a8f18
+4. 
 
 
 # Video References
