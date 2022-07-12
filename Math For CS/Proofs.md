@@ -110,5 +110,98 @@ Inference rules are sometimes written in a funny notation. For example _modus po
 
 When the statements above the line, called the _antecedents_, are proved, then we can consider the statement below the line, called the _conclusion_ or _consequent_, to also be proved.
 
+> **Fun fact**: The term `modus ponens` literally means "_mood that affirms_" if translated from latin directly.
 
+The key requirement of an inference rule is that it must be _sound_, i.e. whatever the antecedent, if it is true, it should also make the consequent true.
+
+Here are some more inferences to go by:
+
+```
+	  P IMPLIES Q, Q IMPLIES R        
+	-----------------------------     
+	        P IMPLIES R
+```
+
+```
+        NOT(P) IMPLIES NOT(Q)           
+    ----------------------------
+            Q IMPLIES P
+```
+
+As with axioms, we will not be too formal about the set of legal inference rules. Each step in a proof should be clear and _logical_; in particular, you should state what previously proved facts are used to derive each new conclusion.
+
+### Proving an Implication
+
+Propositions of the form: `If P, then Q` are called _implications_. This particular implication is often rephrased as: _"P implies Q"_. 
+
+There are a few standard methods to prove such an implication. Let's have a look at them:
+
+#### Method 1
+
+Algorithm: 
+
+1. Write _"Assume P"_.
+2. Show that $Q$ logically follows.
+
+There's a bit of advice about these in the book, which is very helpful:
+
+> You’ll often need to do some scratchwork while you’re trying to figure out the logical steps of a proof. Your scratchwork can be as disorganized as you like—full of dead-ends, strange diagrams, obscene words, whatever. But **keep your scratchwork separate from your final proof, which should be clear and concise.**
+
+Yet another important point to note is that proofs typically begin with the word: "Proof" and end with some sort of limiter, like $\blacksquare$  , which is known as QED. The only purpose for these conventions is to clarify where proofs begin and end. 
+
+On a personal note:
+> It helps to think of these proofs as stories. Each of these stories must have definite beginnings and endings, no "to be continue"s.
+
+
+#### Method 2 - Prove the Contrapositive
+
+***Definition***: An implication `"P IMPLIES Q"` is logically equivalent to it's _contrapositive_ $NOT(Q)\ \ IMPLIES\ \ NOT(P)$. 
+
+To prove an implication by contrapositive, we use the following algorithm:
+
+1. Assume $NOT(P)$ or $P'$
+2. Prove: $Q'\ \implies\ P'$  by using [[Proofs#Method 1|Method 1]]. 
+
+A common and popular example of using this method is shown in the following theorem:
+
+***Theorem***: If $r$ is irrational, then $\sqrt r$  is also irrational.
+
+A number is _rational_ when it equals a quotient of integers, i.e. if it can be represented in the form: $p/q$ where $q\ \neq\ 0$ . Thus, we must show that if $r$ is _not_ a ratio of integers, then $\sqrt r$  is also _not_ a ratio of integers. 
+
+However, this is quite confusing. We can make it simpler using the contrapositive method instead:
+
+_Proof_: We prove the contrapositive: if $\sqrt r$ is rational then, $r$ is rational.
+Assuming that $\sqrt r$ is rational, there exist integers $p$ and $q$ such that:
+
+$$\sqrt r\ = \frac{m}{n}$$
+Squaring both sides, we get:
+
+$$r\ =\ \frac{m^2}{n^2}$$
+Since $m^2$ and $n^2$ are integers, $r$ is also rational. $\blacksquare$
+
+### Proving an _If and Only If_
+
+The phrase: "if and only if" is often abbreviated as: _"iff"_. Usually, it is used when there is a need to show a 2-way implication between 2 statements. For example: 
+
+$$x +  y = 3 \iff x = 3 - y$$
+Here's how we prove an "iff":
+
+#### Method 1: Prove Each Statement Implies the Other
+
+The statement $P \implies Q$ is equivalent to the two statements "$P \implies Q$ AND $Q \implies P$". So if we can prove $P\ \ iff\ \ Q$ by proving the two implications mentioned before. Here's the Algorithm to do so:
+
+1. Write _"We Prove $P \implies Q$ and vice-versa"_.
+2. Prove $P \implies Q$ using one of the methods for proving an implication.
+3. Prove $Q \implies P$ using one of the methods for proving an implication.
+
+#### Method 2: Construct a Chain of Iffs
+
+In order to prove that $P \iff Q$:
+1. Write, _"We construct a chain of iff implications"_.
+2. Prove $P$ is equivalent to a second statement which is equivalent to a third statement and so forth until you reach $Q$.
+
+##### Example
+
+The _standard deviation_ of a sequence of values $x_{1}, x_{2}, x_{3}, ...,x_{n}$ is defined to be:
+$$ \sqrt{ \frac{(x_{1}- \mu)^{2} \ + (x_{2}- \mu)^{2}\ + ... + (x_{n} - \mu )^{2}}{n} } = 0$$
 
