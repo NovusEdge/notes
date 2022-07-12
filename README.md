@@ -1,5 +1,5 @@
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
-# Obsidian Plugins to use with these notes:
+# Obsidian Plugins to use with these notes
 
 - Advanced Tables by Tony Grosinger
 - Better Footnote
@@ -15,3 +15,6 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareA
 [cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
+
+
+***NOTE***: I do not claim ownership of any of the material I have used as a reference when making these notes. So, note that any of said works/references are not subject to the LICENSE for this repository.

@@ -1,6 +1,6 @@
 ## Books
 
-1. [Mathematics for Computer Science by Eric Lehman, F Thomson Leighton and Albert R Meyer](https://drive.google.com/file/d/1G3A1KulhAWFh-EdtqPx9DHv2cKGXWZC9/view?usp=sharing) ^9c2cde
+1. [Mathematics for Computer Science by Eric Lehman, F Thomson Leighton and Albert R Meyer](https://www.amazon.com/Mathematics-Computer-Science-Eric-Lehman/dp/9888407066/ref=sr_1_1?crid=MXJ9ABJXARDE&keywords=Mathematics+for+Computer+Science+by+Eric+Lehman%2C+F+Thomson+Leighton+and+Albert+R+Meyer&qid=1657627963&s=books&sprefix=%2Cstripbooks-intl-ship%2C200&sr=1-1) ^9c2cde
 2. 
 
 
