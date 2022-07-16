@@ -1,0 +1,5 @@
+# E
+- ***[escape sequence](https://en.wikipedia.org/wiki/Escape_sequence)***: In [computer science](https://en.wikipedia.org/wiki/Computer_science "Computer science"), an **escape sequence** is a combination of [characters](https://en.wikipedia.org/wiki/Character_(computing) "Character (computing)") that has a meaning other than the literal characters contained therein; it is marked by one or more preceding (and possibly terminating) characters. ^ab6bab
+
+# S
+- ***[syntax](https://en.wikipedia.org/wiki/Syntax_(programming_languages))***:  the **syntax** of a [computer language](https://en.wikipedia.org/wiki/Computer_language "Computer language") is the set of rules that defines the combinations of symbols that are considered to be correctly structured [statements](https://en.wikipedia.org/wiki/Statement_(computer_science) "Statement (computer science)") or [expressions](https://en.wikipedia.org/wiki/Expression_(computer_science) "Expression (computer science)") in that language. ^2bf2d3
