@@ -9,9 +9,10 @@
 4. [Instruction Architecture Set](https://en.wikipedia.org/wiki/Instruction_set_architecture) ^f9d5ed
 5. [IAS for Intel Processors](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html) ^e45081
 6. [Direct Memory Access, Wikipedia](https://en.wikipedia.org/wiki/Direct_memory_access) ^379d84
-7. 
+7. [C Standard Library](https://stdlib.guide/) ^00e61e
+8. 
 
 
 # Video References
-1. 
-
+1. [Golang UK Conference 2017 | Arne Claus - Concurrency Patterns in Go](https://youtu.be/rDRa23k70CU) ^36039b
+2. 

@@ -205,3 +205,4 @@ In order to prove that $P \iff Q$:
 The _standard deviation_ of a sequence of values $x_{1}, x_{2}, x_{3}, ...,x_{n}$ is defined to be:
 $$ \sqrt{ \frac{(x_{1}- \mu)^{2} \ + (x_{2}- \mu)^{2}\ + ... + (x_{n} - \mu )^{2}}{n} } = 0$$
 
+
